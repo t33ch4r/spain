@@ -1,0 +1,16 @@
+import pyautogui
+import time
+
+def execute_reset():
+    # Wait for 3 seconds before starting
+    time.sleep(3)
+    
+    # Type the reset command
+    pyautogui.write('/reset')
+    pyautogui.press('enter')
+
+if __name__ == "__main__":
+    print("Place your cursor in MU Online game window")
+    print("Script will execute in 3 seconds...")
+    execute_reset()
+pip install pyautogui
